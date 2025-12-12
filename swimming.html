@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swimming</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #468284;
+    color: #0a1a3c;
+}
+
+header {
+    width: 100%;
+    background-color: #0a1a3c;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #fff7b3;
+    padding: 15px;
+    border-bottom: 3px solid #0a1a3c;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+nav a {
+    text-decoration: none;
+    background-color: #0a1a3c;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+nav a:hover {
+    background-color: #18396b;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #fff7b3;
+}
+
+h1 {
+    margin-top: 30px;
+    font-family: 'Alex Brush', cursive;
+    font-size: 50px;
+}
+
+/* Only page titles navy */
+#swim-title {
+    color: #0a1a3c !important;
+}
+#ask-title {
+    color: #0a1a3c !important;
+}
+
+p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fffde0;
+    border: 3px solid #0a1a3c;
+}
+th, td {
+    padding: 12px 20px;
+    text-align: center;
+}
+th:nth-child(even), td:nth-child(even) {
+    background-color: rgba(10, 26, 60, 0.15);
+}
+tr:nth-child(even) {
+    background-color: rgba(10, 26, 60, 0.10);
+}
+
+/* Gallery Cards */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 90%;
+    margin: 20px auto;
+}
+.gallery-item {
+    background-color: #fffde0;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    border: 4px solid #0a1a3c; /* navy outline */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.gallery-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+.gallery-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+.gallery-item h4 {
+    margin: 10px 0;
+    color: #0a1a3c;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+.contact-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto 60px auto;
+    background-color: #fffde0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+.contact-form h3 {
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #0a1a3c;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.contact-form button {
+    background-color: #0a1a3c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+}
+.contact-form button:hover {
+    background-color: #18396b;
+}
+
+footer {
+    width: 90%;
+    margin: 40px auto;
+    background-color: #fffde0;
+    border: 4px solid #0a1a3c;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #0a1a3c;
+}
+
+/* Fun Fact Box */
+.fun-fact {
+    background: #0a1a3c;
+    padding: 20px;
+    border-left: 5px solid #fff7b3;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+.fun-fact strong {
+    color: #fff7b3;
+    font-size: 1.2em;
+}
+.fun-fact p {
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+</style>
+</head>
+
+<body>
+
+<header>My Swimming Journey</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="electric guitar.html">Electric Guitar</a></li>
+        <li><a href="reading.html">Reading</a></li>
+    </ul>
+</nav>
+
+<h1 id="swim-title">🏊‍♀️ Dive Into Swimming</h1>
+
+<h2>Why I Love Swimming</h2>
+<p>Swimming is not only a sport — it is a full-body workout, a relaxing hobby, and a powerful way to improve physical and mental health. I enjoy the feeling of water, the peacefulness underwater, and the challenge of improving my speed and technique.</p>
+
+<h2>How to Start Swimming</h2>
+<ol style="max-width:800px;margin:0 auto 20px auto;">
+    <li>Warm up your body with stretching.</li>
+    <li>Practice floating and breathing properly.</li>
+    <li>Learn basic kicks and arm movements.</li>
+    <li>Try simple strokes like freestyle or breaststroke.</li>
+    <li>Increase distance and speed gradually over time.</li>
+</ol>
+
+<h2>Swimming Levels & Equipment</h2>
+<table>
+    <tr><th>Level</th><th>Essential Items</th></tr>
+    <tr><td>Beginner</td><td>Goggles, swimsuit, kickboard</td></tr>
+    <tr><td>Intermediate</td><td>Pull buoy, swim fins, snorkel</td></tr>
+    <tr><td>Advanced</td><td>Training paddles, resistance bands, racing suit</td></tr>
+</table>
+
+<h2>Swimming Gallery</h2>
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="freestyle.jpg" alt="Freestyle stroke">
+        <h4>Freestyle Stroke</h4>
+    </div>
+    <div class="gallery-item">
+        <img src="breaststroke.jpg" alt="Breaststroke">
+        <h4>Breaststroke</h4>
+    </div>
+    <div class="gallery-item">
+        <img src="backstroke.jpg" alt="Backstroke">
+        <h4>Backstroke</h4>
+    </div>
+    <div class="gallery-item">
+        <img src="butterfly.jpg" alt="Butterfly stroke">
+        <h4>Butterfly Stroke</h4>
+    </div>
+</div>
+
+<h2>Contact Me</h2>
+<div class="contact-form">
+    <h3 id="ask-title">Ask Me Anything About Swimming!</h3>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Question..." required></textarea>
+        <button type="submit">Send Question</button>
+    </form>
+</div>
+
+<h2>Fun Fact</h2>
+<div class="fun-fact">
+    <strong>Did you know?</strong>
+    <p>Elite swimmers can generate enough power during a butterfly stroke to lift their entire upper body out of the water — this explosive move is called a “dolphin breakout,” and it's one of the fastest techniques in competitive swimming!</p>
+</div>
+
+<footer>
+    🌊 Thank you for visiting my swimming page!  
+    <br>Keep practicing • Stay strong • Just keep swimming 🏊‍♀️
+</footer>
+
+</body>
+</html>
+
+
+

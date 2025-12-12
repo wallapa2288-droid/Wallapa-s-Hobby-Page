@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electric Guitar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #a6a66a; 
+    color: #2e3b2e;
+}
+
+header {
+    width: 100%;
+    background-color: #800000;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #fff7cc;
+    padding: 15px;
+    border-bottom: 3px solid #800000;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+nav a {
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+nav a:hover {
+    background-color: #2e3b2e;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+h1 {
+    color: #800000;
+    margin-top: 30px;
+    font-family: 'Alex Brush', cursive;
+    font-size: 50px;
+}
+p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff7cc;
+    border: 3px solid #800000;
+}
+th, td {
+    padding: 12px 20px;
+    text-align: center;
+}
+th:nth-child(even), td:nth-child(even) {
+    background-color: rgba(128,0,0,0.3);
+}
+tr:nth-child(even) {
+    background-color: rgba(128,0,0,0.2);
+}
+
+.video-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+.custom-video {
+    width: 100%;
+    border-radius: 20px;
+    border: 6px solid #2e3b2e;
+    transition: 0.3s;
+}
+.custom-video:hover {
+    transform: scale(1.03);
+    border-color: #800000;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+input[type="range"] {
+    accent-color: #800000; 
+}
+input[type="range"]::-webkit-slider-thumb {
+    background: #800000;
+}
+input[type="range"]::-moz-range-thumb {
+    background: #800000;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #800000;
+}
+input[type="range"]::-moz-range-track {
+    background: #800000;
+}
+
+/* Gallery Cards */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+    width: 90%;
+    margin: 20px auto;
+}
+.gallery-item {
+    background-color: #fff7cc;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    border: 4px solid #800000; /* maroon outline */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.gallery-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.gallery-item h4 {
+    margin: 10px 0;
+    color: #800000;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+.contact-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto 60px auto;
+    background-color: #fff7cc;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+.contact-form h3 {
+    color: #2e3b2e;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #2e3b2e;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.contact-form button {
+    background-color: #800000;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+}
+.contact-form button:hover {
+    background-color: #2e3b2e;
+}
+
+footer {
+    width: 90%;
+    margin: 40px auto;
+    background-color: #fff7cc;
+    border: 4px solid #800000;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #2e3b2e;
+}
+</style>
+</head>
+
+<body>
+
+<header>My Electric Guitar Journey</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="swimming.html">Swimming</a></li>
+        <li><a href="reading.html">Reading</a></li>
+    </ul>
+</nav>
+
+<h1>🎸 Let's Rock n' Roll</h1>
+
+<h2>Getting Started</h2>
+<p>Here is an example of using text with <sub>small notes</sub> and <sup>raised symbols</sup>. Learning guitar involves <b>focus</b>, <b>practice</b>, and <b>patience</b>.</p>
+
+<h2>Step-by-Step: How to Begin Playing Guitar</h2>
+<ol style="max-width:800px;margin:0 auto 20px auto;">
+    <li>Tune your strings properly.</li>
+    <li>Set up your amplifier and cables.</li>
+    <li>Adjust your effects pedals and tone.</li>
+    <li>Warm up with chords and scales.</li>
+    <li>Practice a beginner-friendly song or riff.</li>
+</ol>
+
+<h2>Beginner, Intermediate and Expert Tools</h2>
+<table>
+    <tr><th>Level</th><th>Essential Tools</th></tr>
+    <tr><td>Beginner</td><td>Electric guitar, basic amplifier, picks, tuner, strap</td></tr>
+    <tr><td>Intermediate</td><td>Upgraded guitar, pedals, metronome, capo</td></tr>
+    <tr><td>Expert</td><td>High-end gear, pro amp, effects, recording tools</td></tr>
+</table>
+
+<h2>Learn Guitar Online</h2>
+<div class="video-container">
+    <video id="guitarVideo" controls class="custom-video">
+        <source src="https://files.catbox.moe/ivhksn.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <label for="volumeSlider" style="display:block; margin-top:15px; font-size:18px; color:#800000;">
+        🔊 Video Volume
+    </label>
+    <input 
+        type="range" 
+        id="volumeSlider" 
+        min="0" 
+        max="100" 
+        value="100"
+        style="width: 80%; margin-top:10px;"
+    >
+</div>
+
+<script>
+    const video = document.getElementById("guitarVideo");
+    const slider = document.getElementById("volumeSlider");
+
+    slider.addEventListener("input", function() {
+        video.volume = slider.value / 100;
+    });
+</script>
+
+<h2>Guitar Brands Gallery</h2>
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="fender.jpg" alt="Fender Stratocaster">
+        <h4>Fender Stratocaster</h4>
+    </div>
+    <div class="gallery-item">
+        <img src="gibson.jpg" alt="Gibson Les Paul">
+        <h4>Gibson Les Paul</h4>
+    </div>
+    <div class="gallery-item">
+        <img src="ibanez.jpg" alt="Ibanez RG">
+        <h4>Ibanez RG</h4>
+    </div>
+</div>
+
+<h2>Contact Me</h2>
+<div class="contact-form">
+    <h3>Ask Me Anything About Guitars!</h3>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Question..." required></textarea>
+        <button type="submit">Send Question</button>
+    </form>
+</div>
+
+<footer>
+    🎵 Thank you for visiting my guitar journey website!  
+    <br>Practice every day • Keep rocking 🎸
+</footer>
+
+</body>
+</html>

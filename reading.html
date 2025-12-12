@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #7B679A; 
+    color: #4a2c2a;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #301934;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+nav {
+    background-color: #FFCFD8; 
+    padding: 15px;
+    border-bottom: 3px solid #301934;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+nav a {
+    text-decoration: none;
+    background-color: #301934;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+nav a:hover {
+    background-color: #8c6f19;
+}
+
+/* Titles */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Alex Brush', cursive;
+    font-size: 50px;
+    color: white; 
+}
+h2, h3 {
+    text-align: center;
+    color: #FFCFD8; 
+}
+
+/* Normal text */
+p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Table */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #FFCFD8;
+    border: 3px solid #301934;
+}
+th, td {
+    padding: 12px 20px;
+    text-align: center;
+}
+th:nth-child(even), td:nth-child(even) {
+    background-color: rgba(212,175,55,0.25);
+}
+tr:nth-child(even) {
+    background-color: rgba(212,175,55,0.15);
+}
+
+/* Gallery Cards */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 90%;
+    margin: 20px auto;
+}
+.gallery-item {
+    background-color: #FFCFD8;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    border: 4px solid #4b1f4a; /* dark purple outline */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+.gallery-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    border-color: #301934; /* darken on hover */
+}
+.gallery-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.gallery-item h4 {
+    margin: 10px 0;
+    color: #301934;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto 60px auto;
+    background-color: #FFCFD8;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+.contact-form h3 {
+    margin-bottom: 20px;
+    font-family: cursive;
+    color: #301934;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #301934;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.contact-form button {
+    background-color: #301934;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+}
+.contact-form button:hover {
+    background-color: #8c6f19;
+}
+
+/* Fun Fact Box */
+.funfact-box {
+    background: #301934;
+    padding: 20px;
+    border-left: 5px solid white;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+.funfact-box strong {
+    color: white;
+    font-size: 1.2em;
+}
+.funfact-box p {
+    color: #FFCFD8;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    width: 90%;
+    margin: 40px auto;
+    background-color: #FFCFD8;
+    border: 4px solid #301934;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #4a2c2a;
+}
+</style>
+</head>
+
+<body>
+
+<header>My Reading Journey</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="electric guitar.html">Electric Guitar</a></li>
+        <li><a href="swimming.html">Swimming</a></li>
+    </ul>
+</nav>
+
+<h1>📚 Welcome to My Reading World</h1>
+
+<h2>Why I Love Reading</h2>
+<p>Reading takes me to new worlds, inspires creativity, and helps me learn more about myself and life. Whether it's fantasy, mystery, or history, every book has something unique to offer.</p>
+
+<h2>How to Start Reading More</h2>
+<ol style="max-width:800px;margin:0 auto 20px auto;">
+    <li>Choose a genre you enjoy.</li>
+    <li>Start with short books or short chapters.</li>
+    <li>Make a cozy reading space.</li>
+    <li>Read a little every day.</li>
+    <li>Join a book club or online reading community.</li>
+</ol>
+
+<h2>Book Types & Recommendations</h2>
+<table>
+    <tr><th>Genre</th><th>Examples</th></tr>
+    <tr><td>Fantasy</td><td>Harry Potter, Percy Jackson</td></tr>
+    <tr><td>Mystery</td><td>Nancy Drew, Sherlock Holmes</td></tr>
+    <tr><td>Romance</td><td>To All the Boys I’ve Loved Before</td></tr>
+</table>
+
+<h2>My Reading Gallery</h2>
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="bookshelf.jpg" alt="Bookshelf">
+        <h4>My Bookshelf</h4>
+    </div>
+    <div class="gallery-item">
+        <img src="notes.jpg" alt="Notebook">
+        <h4>Notes & Highlights</h4>
+    </div>
+</div>
+
+<h2>Fun Fact</h2>
+<div class="funfact-box">
+    <strong>Did you know?</strong>
+    <p>Reading for just 6 minutes a day can reduce stress levels by up to 68% — even more than listening to music or drinking tea!</p>
+</div>
+
+<h2>Contact Me</h2>
+<div class="contact-form">
+  <h3>Send a Message about books</h3>
+  <label for="date">Your Birthday&nbsp;</label>
+  <input type="date" id="date" name="date">
+  <input type="text" placeholder="Your Name">
+  <input type="email" placeholder="Your Email">
+  <textarea rows="5" placeholder="Your Message"></textarea>
+  <button>Submit</button>
+</div>
+
+<footer>
+    📖 Thank you for visiting my reading page!  
+    <br>Keep exploring • Keep imagining • Keep reading ❤️
+</footer>
+
+</body>
+</html>
+
+
+
